@@ -1,7 +1,7 @@
 import * as React from 'react';
 import FileViewer from 'react-file-viewer';
 import Button from '@mui/material/Button';
-import file from '../files/Egan, Alex Resume 20230612.png';
+import file from '../files/Egan, Alex Resume.png';
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import { Typography } from '@mui/material';
 
@@ -31,11 +31,6 @@ export function Resume() {
               <FileDownloadIcon></FileDownloadIcon>
             </Typography>
           </Button>
-        </div>
-      </div>
-      <div className="download-button-container">
-        <div className="">
-          
         </div>
       </div>
     </div>
