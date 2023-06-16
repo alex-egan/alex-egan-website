@@ -13,8 +13,9 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/Inbox';
-import MailIcon from '@mui/icons-material/Mail';
+import HouseIcon from '@mui/icons-material/House';
+import ArticleIcon from '@mui/icons-material/Article';
+import WaterIcon from '@mui/icons-material/Water';
 
 export default function NavBar() {
   const [state, setState] = React.useState({
@@ -44,7 +45,15 @@ export default function NavBar() {
           <ListItem key={text} disablePadding>
           <ListItemButton>
               <ListItemIcon>
-              {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                {() => {
+                  if (text == 'Home') {
+                    return <HouseIcon />
+                  } else if (text == 'Resume') {
+                    return <ArticleIcon />
+                  } else if ('Lake Powell Data') {
+                    return <WaterIcon />
+                  }
+                  }}
               </ListItemIcon>
               <ListItemText primary={text} onClick={() => window.location.replace(text.toLowerCase().split(' ').join('-'))} />
           </ListItemButton>

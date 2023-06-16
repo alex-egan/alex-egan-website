@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Routes, Route, BrowserRouter} from "react-router-dom";
 import NavBar from './components/NavBar';
-import SideBar from './components/SideBar';
 import LakePowellData from './pages/LakePowellData';
 import Home from './pages/Home';
 import {Resume} from './pages/Resume';
@@ -28,9 +27,6 @@ root.render(
       <footer>
 
       </footer>
-    </div>
-    <div className="sidebar">
-      <SideBar />
     </div>
   </React.StrictMode>
 );

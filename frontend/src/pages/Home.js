@@ -1,11 +1,16 @@
 import * as React from 'react';
+import Carousel from '../components/Carousel';
 
 export default function Home() {
-    const link = "https://lakepowell.water-data.com/";
   return (
-    <div className="home">
-        <div className="row page-title">
-            <h2>Welcome Home</h2>
+    <div className="home-page">
+        <div className="m-3 row page-title">
+          <h2>Welcome To My Wesbite</h2>
+        </div>
+        <div className="m-1 row content">
+          <div className="">
+            <Carousel></Carousel>
+          </div>
         </div>
     </div>
   );

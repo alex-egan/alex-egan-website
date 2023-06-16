@@ -26,7 +26,6 @@ header {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   flex: 1;
 }
 
@@ -37,6 +36,13 @@ body {
 
 .page-title {
   align-items: start;
+  justify-content: start;
+}
+
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer {
@@ -47,6 +53,7 @@ footer {
   display: flex;
   height: 100%;
   width: 100%;
+  align-items: center;
 }
 
 .app-logo {
